@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects With Source Code</title>
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/vs2015.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="ri-menu-fill" style="color: #fff;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="project-list">
+        <h1>My Projects</h1>
+        <div class="projects">
+        <div class="project">
+            <img src="Images/Projects/Text Editor.png" alt="Image not found" class="img">
+            <h2>Text Editor Using Python</h2>
+            <button class="show-code-btn" data-project="project1">Show Code</button>
+        </div>
+        <div class="project">
+            <img src="Images/Projects/Buttons.jpeg" alt="Image not found" class="img">
+            <h2>Animated Buttons</h2>
+            <button class="show-code-btn" data-project="project2">Show Code</button>
+        </div>
+        <div class="project">
+            <img src="Images/Projects/calculator.jpeg" alt="Image not found" class="img">
+            <h2>Html, Css, & js Calculator</h2>
+            <button class="show-code-btn" data-project="project3">Show Code</button>
+        </div>
+        <div class="project">
+            <img src="Images/Projects/calculator.jpeg" alt="Image not found" class="img">
+            <h2>Html, Css, & js Calculator</h2>
+            <button class="show-code-btn" data-project="project3">Show Code</button>
+        </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="modal" id="codeModal">
+        <div class="modal-content">
+            <button class="copy-btn">Copy</button>
+            <pre class="code-container">
+                <code id="codeContent"></code>
+            </pre>
+            <div class="language-options">
+                <button class="lang-btn" data-lang="html">HTML</button>
+                <button class="lang-btn" data-lang="css">CSS</button>
+                <button class="lang-btn" data-lang="js">JS</button>
+                <button class="lang-btn" data-lang="py">Python</button>
+            </div>
+            <button class="close-btn">Close</button>
+        </div>
+    </div>
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/htmlcode.js"></script>
+    <script src="js/csscode.js"></script>
+    <script src="js/javascriptcode.js"></script>
+    <script src="js/pythoncode.js"></script>
+</body>
+
+</html>

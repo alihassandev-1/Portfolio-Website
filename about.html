@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Ali Hassan, a Front-End Developer & UI/UX Designer at CodAlpha.">
+    <title>About - Ali Hassan</title>
+    <link rel="shortcut icon" href="Images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+
+        #about {
+            text-align: center;
+            padding: 100px 15px;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #eee;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #ddd;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .skill-item {
+            background-color: rgba(0, 0, 0, 0.2);
+            border: 1px solid #9333ea;
+            border-radius: 5px;
+            padding: 20px;
+            width: 250px;
+            transition: transform 0.3s;
+        }
+
+        .skill-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .skill-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #9333ea;
+        }
+
+        .skill-item p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        @media (max-width: 768px) {
+            .skills {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <div class="container">
+            <h1>Ali<span> Hassan.</span></h1>
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="ri-menu-fill" style="color: #fff;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="about" class="container">
+            <h2>About Me</h2>
+            <p>Am Ali Hassan, a passionate Front-End Developer & UI/UX Designer with a knack for crafting visually stunning and user-friendly digital experiences. With a strong foundation in web technologies and a creative approach to design, I bring ideas to life on the web.</p>
+
+            <div class="skills">
+                <div class="skill-item">
+                    <h3>HTML & CSS</h3>
+                    <p>Expertise in creating responsive layouts and writing clean, maintainable code using HTML5 and CSS3.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <p>Skilled in using JavaScript to build dynamic and interactive user interfaces with a focus on usability.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>UI/UX Design</h3>
+                    <p>Proficient in designing intuitive user interfaces with a deep understanding of user experience principles.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Responsive Design</h3>
+                    <p>Adept at creating mobile-first designs that look great on all devices, ensuring accessibility and performance.</p>
+                </div>
+            </div>
+
+            <div class="btn">
+                <a href="https://www.facebook.com/thecodebrain" target="_blank"><button>Find Me</button></a>
+                <a href="https://www.linkedin.com/in/thecodebrain" target="_blank"><i class="ri-linkedin-fill color1"></i></a>
+                    <a href="https://www.instagram.com/xany.web?igsh=MTV4ZGlxcWhjYXN0bQ==
+                    " target="_blank"><i class="ri-instagram-fill color2"></i></a>
+                    <a href=""><i class="ri-twitter-x-fill color3" href=""></i></a>
+                    <a href="https://www.facebook.com/thecodebrain" target="_blank"><i class="ri-facebook-circle-fill color4" href=""></i></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Ali Hassan at CodAlpha.">
+    <title>Contact Us - Ali Hassan</title>
+    <link rel="shortcut icon" href="Images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+
+        #contact-us {
+            display: flex;
+            justify-content: space-between;
+            padding: 100px 15px;
+        }
+
+        #contact-form {
+            width: 45%;
+            background: #0f1a31;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        #contact-form h2 {
+            font-size: 2rem;
+            color: #eee;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            animation: fadeUp 1s ease-in-out forwards;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            color: #111;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            background-color: #2563eb;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            animation: zoomIn 1s ease-in-out forwards;
+        }
+
+        .form-group button:hover {
+            background-color: #9333ea;
+        }
+
+        #contact-info {
+            width: 45%;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        #contact-info h3 {
+            font-size: 2rem;
+            color: #eee;
+            margin-bottom: 30px;
+            animation: fadeUp 1s ease-in-out forwards;
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .contact-icon:hover {
+            transform: scale(1.2);
+            color: #9333ea;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes bounceIn {
+            0%, 20%, 40%, 60%, 80%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+        }
+
+        @media (max-width: 768px) {
+            #contact-us {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #contact-form,
+            #contact-info {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <div class="container">
+            <h1>Ali<span> Hassan.</span></h1>
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="ri-menu-fill" style="color: #fff;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="contact-us" class="container">
+            <div id="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <!-- <label for="name">Name:</label> -->
+                        <input type="text" id="name" name="name" required placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="email">Email:</label> -->
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="message">Message:</label> -->
+                        <textarea id="message" name="message" rows="5" required placeholder="Write message here..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="contact-info">
+                <h3>Contact Information</h3>
+                <div>
+                    <i class="ri-whatsapp-fill contact-icon"></i>
+                    <p>+92302-2294333</p>
+                </div>
+                <div>
+                    <i class="ri-map-pin-fill contact-icon"></i>
+                    <p>Lahore, Punjab, Pakistan</p>
+                </div>
+                <div>
+                    <i class="ri-mail-fill contact-icon"></i>
+                    <p>hassanali0495@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert("Thanks! We'll respond quickly.");
+            this.reset(); // Clear the form fields after submission.
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

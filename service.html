@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the services offered by Ali Hassan in Front-End Development & UI/UX Design.">
+    <title>Services - Ali Hassan</title>
+    <link rel="shortcut icon" href="Images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+
+        #services {
+            text-align: center;
+            padding: 100px 15px;
+        }
+
+        #services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #eee;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .service-box {
+            width: 320px;
+            height: 300px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border: 1px solid #9333ea;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: rotateIn 1s ease-in-out forwards;
+        }
+
+        .service-box:hover {
+            transform: rotateY(10deg);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-box i {
+            font-size: 3rem;
+            color: #1877f2;
+            margin-bottom: 20px;
+        }
+
+        .service-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #9333ea;
+        }
+
+        .service-box p {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        @media (max-width: 1102px) {
+            #services .row{
+                margin-left: -20px;
+                margin-right: -20px;
+                gap: 10px;
+            }
+            #services .service-box{
+              width: 100%;
+              height: 100%;
+            }
+        }
+
+        @media (max-width: 992px) {
+            #services .row{
+                margin-left: -50px;
+                margin-right: -50px;
+                gap: 10px;
+            }
+            #services .service-box{
+              width: 100%;
+              height: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #services {
+                padding: 50px 15px;
+            }
+
+            #services .row{
+                margin: auto;
+                gap: 15px;
+            }
+
+            .service-box {
+                margin: 15px 0;
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <div class="container">
+            <h1>Ali<span> Hassan.</span></h1>
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="ri-menu-fill" style="color: #fff;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="services" class="container">
+            <h2>Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="ri-code-fill"></i>
+                        <h3>Web Development</h3>
+                        <p>Creating high-performance websites using the latest technologies and best practices.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="ri-paint-brush-fill"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Designing user interfaces and experiences that are intuitive, engaging, and user-friendly.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="ri-apps-fill"></i>
+                        <h3>App Development</h3>
+                        <p>Building mobile and web applications that provide seamless and interactive user experiences.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="ri-search-line"></i>
+                        <h3>SEO Optimization</h3>
+                        <p>Improving website visibility and ranking on search engines through effective SEO strategies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <i class="ri-settings-3-fill"></i>
+                        <h3>Maintenance</h3>
+                        <p>Providing ongoing support and maintenance to ensure the smooth operation of your digital assets.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn">
+                <a href="https://www.facebook.com/thecodebrain" target="_blank"><button>Get In Touch</button></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

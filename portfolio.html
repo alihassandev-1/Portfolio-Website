@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Ali Hassan's portfolio showcasing projects in Front-End Development & UI/UX Design.">
+    <title>Portfolio - Ali Hassan</title>
+    <link rel="shortcut icon" href="Images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+
+        #portfolio {
+            text-align: center;
+            padding: 100px 15px;
+        }
+
+        #portfolio h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #eee;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        #portfolio .portfolio-item {
+            background-color: rgba(0, 0, 0, 0.2);
+            border: 1px solid #9333ea;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+            height: 380px;
+            margin-bottom: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            opacity: 0;
+            animation: zoomIn 1.5s ease-in-out forwards;
+        }
+
+        #portfolio .portfolio-item img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            animation: zoomOut 1.5s ease-in-out forwards;
+        }
+
+        #portfolio .portfolio-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #9333ea;
+        }
+
+        #portfolio .portfolio-item p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        #portfolio .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomOut {
+            from {
+                transform: scale(1.2);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 992px) {
+            #portfolio .row{
+                margin-left: -30px;
+                margin-right: -30px;
+            }
+            #portfolio .portfolio-item{
+              width: 100%;
+              height: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #portfolio {
+                padding: 50px 15px;
+            }
+
+            #portfolio .portfolio-item {
+                width: 100%;
+                height: auto;              
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <div class="container">
+            <h1>Ali<span> Hassan.</span></h1>
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="ri-menu-fill" style="color: #fff;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="portfolio" class="container">
+            <h2>My Portfolio</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="https://img.freepik.com/free-vector/flat-design-minimal-technology-landing-page_23-2149177603.jpg?t=st=1724692518~exp=1724696118~hmac=193f2ef856f10557a98f49a4df827158f0e36c2e4be549a93eca0e2cc97a3000&w=740" alt="Project 1">
+                        <h3>Technology landing Page</h3>
+                        <p>Responsive website design for a tech startup, focusing on clean and modern user interfaces.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="https://img.freepik.com/free-vector/sport-landing-page-with-photo-with-man-working-out_23-2148370282.jpg?t=st=1724692396~exp=1724695996~hmac=92574464b17ecde5ecd146da57326af424f50d9ed6f369f26d8af1a633a98cb0&w=740" alt="Project 2">
+                        <h3>E-Commerce Website</h3>
+                        <p>E-commerce platform with advanced product filtering and a seamless user experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="Images/portfolio.jpeg" alt="Project 3">
+                        <h3>Portfolio Template</h3>
+                        <p>Portfolio website for a Web Developer, showcasing a wide range of creative works.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
